@@ -33,7 +33,8 @@ header i {
 }
 
 header h2:hover {
-	transform: scale(1.2);
+	background-color:#2B2B2B;
+	color: #FFFFFF;
 }
 
 .website-logo {
@@ -63,7 +64,8 @@ li i {
 }
 
 li:hover {
-	transform: scale(1.2);
+	background-color:#2B2B2B;
+	color: #FFFFFF;
 }
 
 /*Card Container Styling*/
@@ -270,6 +272,14 @@ li:hover {
 		padding-top: 0.5em;
 	}
 
+	header h2:hover {
+	transform: scale(1.2);
+	}
+
+	li:hover {
+	transform: scale(1.2);
+	}	
+
 	nav {
 		width: 45%;
 	}
@@ -320,7 +330,15 @@ li:hover {
 	header h1 {
 		padding-top: 0.5em;
 	}
-		
+	
+	header h2:hover {
+	transform: scale(1.2);
+	}
+
+	li:hover {
+		transform: scale(1.2);
+	}
+
 	.nav-bar-items {
 		display: flex;
 		flex-direction: row;
