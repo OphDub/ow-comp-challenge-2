@@ -6,9 +6,9 @@ body {
 }
 
 header {
-	background-color: magenta;
+	background-color: #FFFFFF;
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	padding: 1em;
 }
 
@@ -16,8 +16,33 @@ header h1,h2,h3,h4,p {
 	margin: 0;
 }
 
+header h1 {
+	align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 header h2 {
 	font-size: 1em;
+	font-weight: 400;
+	color: #2B2B2B;
+}
+
+header i {
+	color: #B63337;
+}
+
+header h2:hover {
+	transform: scale(1.2);
+}
+
+.website-logo {
+	order:-1;
+} 
+
+.CRSFT-logo {
+	height: 1em;
+	background-color: transparent;
 }
 
 .nav-bar-items {
@@ -30,22 +55,25 @@ header h2 {
 	-webkit-margin-after: 0px;
 	padding: 0.5em;
 	font-size: 0.9em;
+	color: #2B2B2B;
 }
 
 li i {
-	color: blue;
+	color: #B63337;
 }
 
-
+li:hover {
+	transform: scale(1.2);
+}
 
 /*Card Container Styling*/
 .card-container{
-	border: green 1px solid;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	background-color: #2B2B2B;
 }
 
 /*Card Styling*/
@@ -53,7 +81,7 @@ li i {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: magenta;
+	background-color: #bec4ce;
 	margin: 0.5em;
 	-webkit-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.75);
@@ -63,13 +91,18 @@ li i {
 .recipient-card:hover {
 	margin: 0;
 	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.recipient-card:hover .card-banner {
+	background-size: 120%;
+	transition: all .25s;
 }
 
 .card-banner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("http://cdn.newsapi.com.au/image/v1/15dc45ac2ac64c961d923368a082ed36?width=1024");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 9em;
@@ -119,10 +152,17 @@ li i {
 	font-weight: 400;
 }
 
+.card-1 .card-banner {
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("http://lessonsinbadassery.com/wp-content/uploads/2017/07/Celebration-1160x770.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 .card-2 .card-banner{
 	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("https://au.compexstore.com/sites/default/files/editor_folders/Kara_Webb_Tia_Clair_CrossFit_Games_2017.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-position: 0% 30%;
 }
 
 .card-3 .card-banner{
@@ -153,6 +193,7 @@ li i {
 	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("https://www.forgevalleyfitness.com/Addicted%20-%20Pat%20Vellner.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-position: 0% 25%;
 }
 
 .card-8 .card-banner{
@@ -161,7 +202,47 @@ li i {
 	background-repeat: no-repeat;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 250px) {
+	.nav-bar-items {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 550px) {
+	header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	header h1 {
+		padding-top: 0.5em;
+	}
+
+	nav {
+		width: 45%;
+	}
+
+	ul {
+		align-content: flex-end;
+	}
+
+	.nav-bar-items {
+		display: flex;
+		flex-direction: row;
+		align-content: flex-start;
+		justify-content: space-around;
+		list-style: none;
+		-webkit-padding-start: 0px;
+		-webkit-margin-before: 0px;
+		-webkit-margin-after: 0px;
+		padding: 0.5em;
+		font-size: 0.9em;
+		width: 60%;
+	}
+
 	.recipient-card:hover {
 		margin: 0;
 		width: 48.5%;
@@ -181,6 +262,20 @@ li i {
 	header {
 		display: flex;
 		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	header h1 {
+		padding-top: 0.5em;
+	}
+
+	nav {
+		width: 45%;
+	}
+
+	ul {
+		align-content: flex-end;
 	}
 
 	.nav-bar-items {
@@ -194,11 +289,13 @@ li i {
 		-webkit-margin-after: 0px;
 		padding: 0.5em;
 		font-size: 0.9em;
+		width: 40%;
 	}
 
 	.recipient-card:hover {
 		margin: 0;
 		width: 32.5%;
+
 	}
 
 	.card-container {
@@ -213,6 +310,31 @@ li i {
 }
 
 @media (min-width: 1200px) {
+	header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	header h1 {
+		padding-top: 0.5em;
+	}
+		
+	.nav-bar-items {
+		display: flex;
+		flex-direction: row;
+		align-content: flex-start;
+		justify-content: space-around;
+		list-style: none;
+		-webkit-padding-start: 0px;
+		-webkit-margin-before: 0px;
+		-webkit-margin-after: 0px;
+		padding: 0.5em;
+		font-size: 0.9em;
+		width: 40%;
+	}
+	
 	.recipient-card:hover {
 		margin: 0;
 		width: 24.5%;
