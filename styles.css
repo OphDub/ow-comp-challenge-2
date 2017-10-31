@@ -1,0 +1,230 @@
+/*Global Styling*/
+
+/*Header Styling*/
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: magenta;
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 1em;
+}
+
+header h1,h2,h3,h4,p {
+	margin: 0;
+}
+
+header h2 {
+	font-size: 1em;
+}
+
+.nav-bar-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	-webkit-padding-start: 0px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	padding: 0.5em;
+	font-size: 0.9em;
+}
+
+li i {
+	color: blue;
+}
+
+
+
+/*Card Container Styling*/
+.card-container{
+	border: green 1px solid;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*Card Styling*/
+.recipient-card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: magenta;
+	margin: 0.5em;
+	-webkit-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.75);
+}
+
+.recipient-card:hover {
+	margin: 0;
+	width: 100%;
+}
+
+.card-banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("http://cdn.newsapi.com.au/image/v1/15dc45ac2ac64c961d923368a082ed36?width=1024");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 9em;
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.card-banner i {
+	padding: 0.1em;
+}
+
+.view-counter {
+	padding: 1em;
+}
+
+.view-counter-header {
+	font-weight: 400;
+}
+
+.card-info{
+	padding: 1em;
+}
+
+.card-link-section {
+	margin: 1em 0 1em;
+	padding: 0.75em;
+	background-color: #EFEFEF;
+	font-size: 0.75em;
+}
+
+.time-stamp, .playlist-header, .card-attachments {
+	font-size: 0.75em;
+}
+
+.recipient-name, .playlist-name {
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0.25em 0 0.25em;
+}
+
+.playlist-name {
+	margin-bottom: 1em;
+}
+
+.counter-styles {
+	font-size: 1.75em;
+	font-weight: 400;
+}
+
+.card-2 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("https://au.compexstore.com/sites/default/files/editor_folders/Kara_Webb_Tia_Clair_CrossFit_Games_2017.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.card-3 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("http://www.dubaiweek.ae/wp-content/uploads/2015/12/Annie-Thorisdottir-2-copy.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.card-4 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("http://www.fitnesshq.com/wp-content/uploads/2016/06/13320797_1117813768260480_7372790460263257538_o.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.card-5 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("http://roguefitness.com/slideshowpro/albums/album-643/lg/fraser-5.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.card-6 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("https://games-assets.crossfit.com/rotator-fikowski.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.card-7 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("https://www.forgevalleyfitness.com/Addicted%20-%20Pat%20Vellner.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.card-8 .card-banner{
+	background:  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("https://i.ytimg.com/vi/iHLbfhrJ_tA/maxresdefault.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 500px) {
+	.recipient-card:hover {
+		margin: 0;
+		width: 48.5%;
+	}
+
+	.card-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.recipient-card{
+		width: 48%;
+		margin: 0.35em;
+	}
+}
+@media (min-width: 1000px) {
+	header {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.nav-bar-items {
+		display: flex;
+		flex-direction: row;
+		align-content: flex-start;
+		justify-content: space-around;
+		list-style: none;
+		-webkit-padding-start: 0px;
+		-webkit-margin-before: 0px;
+		-webkit-margin-after: 0px;
+		padding: 0.5em;
+		font-size: 0.9em;
+	}
+
+	.recipient-card:hover {
+		margin: 0;
+		width: 32.5%;
+	}
+
+	.card-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.recipient-card{
+		width: 32%;
+		margin: 0.35em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.recipient-card:hover {
+		margin: 0;
+		width: 24.5%;
+	}
+
+	.card-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.recipient-card{
+		width: 24%;
+		margin: 0.35em;
+	}
+}
